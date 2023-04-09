@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="punishment.css">
+    <!-- <script src="generate.js"></script> -->
+    <script src="https://kit.fontawesome.com/4b9ceba59b.js" crossorigin="anonymous"></script>
+
+    <title>Punishments</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./src/images/saving.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Punishments</a></li>
+                <li><a href="note.html">Notes</a></li>
+                <!-- <li><a href="">Contact US</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div id="heading">
+            <h3>Pick Your Poison</h3>
+        </div>
+
+        <div class="cards-container">
+            <div class="card1 cards">
+                <div id="img1">
+                    <img src="./src/images/food1.jpg" alt="">
+                </div>
+
+                <div class="card-content">
+                    <h1>BUY FOOD!</h1>
+                    <hr>
+                    <p>For this punishment the late comer would have to buy a food item for the whole class. Keep in
+                        mind the
+                        food item need to be of the person's choosing.</p>
+                    <a href=""></a>
+                </div>
+
+            </div>
+
+            <div class="card2 cards">
+                <div id="img1">
+                    <img src="./src/images/regret.jpg" alt="">
+                </div>
+
+                <div class="card-content">
+                    <h1>SORRY LETTER!</h1>
+                    <hr>
+                    <p>For this punishment the late commer has to write a letter and went to 5 teachers for sign on this
+                        letter and give them one choclate also.</p>
+                    <a href=""></a>
+                </div>
+            </div>
+
+            <div class="card3 cards">
+                <div id="img1">
+                    <img src="./src/images/newstoryimg.jpg" alt="">
+                </div>
+
+                <div class="card-content">
+                    <h1>STORY TELLING!</h1>
+                    <hr>
+                    <p>For this punishment the late comer would have to narrate an embarrasing story about themselves to
+                        the whole class and ' 2 Attandance ' will be deducted.</p>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generate Button Div -->
+        <div class="generate">
+            <div id="generate-heading">
+                <h4>
+                    Ready for the game, Your Faith will Choose Your Punishment.
+                </h4>
+            </div>
+            <div id="generate-button">
+                <button value="Generate" id="btn" onclick="generate()">Generate</button>
+            </div>
+        </div>
+
+        <div class="after-gerate-HR">
+            <hr>
+        </div>
+        <div id="text">
+            <h5></h5>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-main-content">
+
+            <div class="left box">
+                <h2>Creatores</h2>
+                <hr>
+                <div class="left-content">
+                    <p>Rahul Gupta</p>
+                    <p>Shivam Chopra</p>
+                    <p>Maniket Khanna</p>
+                    <p>Rishi Kaushal</p>
+                </div>
+            </div>
+
+            <div class="center box">
+                <div class="center-head">
+                    <h2>Social Links</h2>
+                    <hr>
+                </div>
+                <div class="btns">
+                    <div class="person1">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                    <div class="person2">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                    <div class="person3">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                    <div class="person4">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+
+                </div>
+
+                <!-- <div class="center-right">
+              <h2>Profession</h2>
+              <div class="person1-profession">
+                <p>ML, AI</p>
+              </div>
+    
+              <div class="person2-profession">
+                <p>ML, AI</p>
+              </div>
+    
+              <div class="person3-profession">
+                <p>ML, AI</p>
+              </div>
+    
+              <div class="person4-profession">
+                <p>ML, AI</p>
+              </div>
+            </div> -->
+            </div>
+
+            <div class="right box">
+                <h2>Contact us</h2>
+                <hr>
+
+                <div class="right-content">
+                    <form action="https://formspree.io/f/mzbqkdkk"
+                    method="POST">
+
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required class="email-input" name="email">
+                        </div>
+
+                        <div class="msg">
+                            <div class="text">Message *</div>
+                            <textarea rows="2" cols="25" required class="message-input" name="message"></textarea>
+                        </div>
+
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // let card1 = document.querySelector('.card1');
+    // let card2 = document.querySelector('.card2');
+    // let card3 = document.querySelector('.card3');
+    // let arr = [1, 2, 3];
+    // let value = (Math.random() * arr);
+
+
+    // g_button.onclick = function(){
+    //     console.log(value);
+    //     // for(let i=0;i<arr.length();i++){
+    //     //     let n = value[i];
+    //     // }
+    //     // console.log(n);
+    // 
+    let g_button = document.getElementById('btn');
+    let arr = ['BUY FOOD!', 'SORRY LETTER!', 'STORY TELLING!', 'LUCKY!'];
+    function random(mn, mx) {
+        return Math.random() * (mx - mn) + mn;
+    }
+
+    function generate() {
+        text.innerHTML = arr[(Math.floor(random(1, 5))) - 1];
+    }
+</script>
+
+</html>
